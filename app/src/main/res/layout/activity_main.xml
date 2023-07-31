@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgnd"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/midpage"
+        android:layout_width="412dp"
+        android:layout_height="555dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="@id/relativeLayout"
+        app:layout_constraintHorizontal_bias="1.0"
+
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/eventcal"
+                android:layout_width="181dp"
+                android:layout_height="125dp"
+
+                android:layout_marginStart="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/tophzguide"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.609"
+                app:srcCompat="@drawable/rnd_rect"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/eventphoto"
+                android:layout_width="181dp"
+                android:layout_height="120dp"
+
+                android:layout_marginEnd="23dp"
+
+                android:onClick="eventclick"
+                android:src="@drawable/calender_photo"
+                app:layout_constraintBottom_toBottomOf="@+id/eventcal"
+                app:layout_constraintEnd_toStartOf="@+id/resoucebg"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/eventcal"
+                app:layout_constraintTop_toTopOf="@+id/eventcal"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/eventtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+
+                android:text="EVENT CALENDER"
+
+                android:textColor="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/eventcal"
+                app:layout_constraintEnd_toEndOf="@+id/eventcal"
+                app:layout_constraintHorizontal_bias="0.481"
+                app:layout_constraintStart_toStartOf="@+id/eventcal"
+                app:layout_constraintTop_toTopOf="@+id/eventcal"
+                app:layout_constraintVertical_bias="0.952" />
+
+
+            <ImageView
+                android:id="@+id/resoucebg"
+                android:layout_width="181dp"
+                android:layout_height="125dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/tophzguide"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.609"
+                app:srcCompat="@drawable/rnd_rect"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/resphoto"
+                android:layout_width="148dp"
+                android:layout_height="97dp"
+                android:onClick="resourcesclick"
+                android:layout_marginTop="8dp"
+
+                android:src="@drawable/resource_photo"
+                app:layout_constraintEnd_toEndOf="@+id/resoucebg"
+                app:layout_constraintStart_toStartOf="@+id/resoucebg"
+                app:layout_constraintTop_toTopOf="@+id/resoucebg" />
+
+            <TextView
+                android:id="@+id/restext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="RESOURCES"
+                android:textColor="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/resoucebg"
+                app:layout_constraintEnd_toEndOf="@id/resoucebg"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toStartOf="@id/resoucebg"
+                app:layout_constraintTop_toTopOf="@+id/resoucebg"
+                app:layout_constraintVertical_bias="0.95" />
+
+
+            <ImageView
+                android:id="@+id/internbg"
+                android:layout_width="181dp"
+                android:layout_height="125dp"
+
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/midhzguide"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toTopOf="@+id/tophzguide"
+                app:layout_constraintVertical_bias="0.508"
+                app:srcCompat="@drawable/rnd_rect"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/internphoto"
+                android:layout_width="153dp"
+                android:layout_height="104dp"
+                android:onClick="internclick"
+                android:src="@drawable/intern_photo"
+                app:layout_constraintEnd_toEndOf="@+id/internbg"
+                app:layout_constraintHorizontal_bias="0.392"
+                app:layout_constraintStart_toStartOf="@+id/internbg"
+                app:layout_constraintTop_toTopOf="@+id/internbg"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/interntext"
+                android:layout_width="106dp"
+                android:layout_height="37dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="INTERNSHIP AND OPPORTUNITIES"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/internbg"
+                app:layout_constraintEnd_toEndOf="@id/internbg"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="@id/internbg"
+                app:layout_constraintTop_toTopOf="@+id/internbg"
+                app:layout_constraintVertical_bias="0.95"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/maintainencebg"
+                android:layout_width="181dp"
+                android:layout_height="125dp"
+
+                app:layout_constraintBottom_toBottomOf="@id/bothzguide"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintHorizontal_bias="0.583"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/midhzguide"
+                app:layout_constraintVertical_bias="0.294"
+                app:srcCompat="@drawable/rnd_rect"
+                tools:ignore="MissingConstraints" />
+
+
+            <ImageView
+                android:id="@+id/maintphoto"
+                android:layout_width="129dp"
+                android:layout_height="94dp"
+
+                android:src="@drawable/maintanence_photo"
+                app:layout_constraintBottom_toTopOf="@id/maintainencetext"
+                app:layout_constraintEnd_toEndOf="@+id/maintainencebg"
+                app:layout_constraintStart_toStartOf="@+id/maintainencebg"
+                app:layout_constraintTop_toTopOf="@id/maintainencebg"
+                android:onClick="openGoogleForm"
+                app:layout_constraintVertical_bias="0.63"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/maintainencetext"
+                android:layout_width="106dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="88dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="MAINTENANCE REPORTING"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/maintainencebg"
+                app:layout_constraintEnd_toEndOf="@id/maintainencebg"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="@id/maintainencebg"
+                app:layout_constraintTop_toTopOf="@id/maintphoto" />
+
+
+            <ImageView
+                android:id="@+id/memebg"
+                android:layout_width="181dp"
+                android:layout_height="125dp"
+
+
+                app:layout_constraintBottom_toTopOf="@+id/midhzguide"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toTopOf="@+id/tophzguide"
+                app:srcCompat="@drawable/rnd_rect"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/memephoto"
+                android:layout_width="129dp"
+                android:layout_height="94dp"
+
+                android:onClick="memepage"
+                android:src="@drawable/meme"
+                app:layout_constraintBottom_toBottomOf="@+id/memebg"
+                app:layout_constraintEnd_toEndOf="@+id/memebg"
+                app:layout_constraintStart_toStartOf="@+id/memebg"
+                app:layout_constraintTop_toTopOf="@+id/memebg"
+                tools:ignore="MissingConstraints"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/memetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="104dp"
+
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="MEMES"
+
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="@+id/memebg"
+                app:layout_constraintHorizontal_bias="0.517"
+                app:layout_constraintStart_toStartOf="@+id/memebg"
+                app:layout_constraintTop_toTopOf="@+id/memebg" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/tophzguide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="166dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="205dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/midhzguide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="352dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/bothzguide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="539dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rndbtn2"
+        android:orientation="horizontal"
+        app:circularflow_defaultRadius="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageButton
+
+            android:id="@+id/homepage"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="183dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/rndcorner"
+            android:foregroundGravity="center_vertical|clip_horizontal|center|clip_vertical"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home_icon"
+
+            app:tint="@color/black"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/user"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="182dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="59dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/rndcorner"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="Userclick"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user_icon"
+
+
+            app:tint="@color/black"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="384dp"
+        android:layout_height="242dp"
+        android:layout_marginBottom="580dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/topbar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

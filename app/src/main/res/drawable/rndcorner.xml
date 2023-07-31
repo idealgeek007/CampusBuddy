@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<corners  android:radius="50dp"/>
+    <solid android:color="@color/lighttheme" />
+    <stroke android:color="@color/lighttheme"/>
+    <item android:state_pressed="true" android:drawable="@drawable/user"/>
+    <item android:drawable="@drawable/user"/>
+</shape>
+
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calevent"
+    android:background="@color/bgnd"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rndbtn2"
+        android:orientation="horizontal"
+        app:circularflow_defaultRadius="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964">
+
+        <ImageButton
+
+            android:id="@+id/homepage"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginEnd="183dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/rndcorner"
+            android:foregroundGravity="center_vertical|clip_horizontal|center|clip_vertical"
+
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home_icon"
+            app:tint="@color/black"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/user"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="182dp"
+            android:layout_marginEnd="59dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/rndcorner"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="Userclick"
+
+
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user_icon"
+            app:tint="@color/black"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+    </RelativeLayout>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="346dp"
+        android:layout_height="321dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rnd_rect"
+        android:focusedMonthDateColor="@color/themeclr"
+        android:selectedWeekBackgroundColor="@color/themeclr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/eventview"
+        android:layout_width="348dp"
+        android:layout_height="356dp"
+        android:background="@drawable/rnd_rect"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
