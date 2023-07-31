@@ -22,7 +22,7 @@
         app:layout_constraintRight_toRightOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout"
+            android:id="@+id/midpageconstlayout"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -51,6 +51,7 @@
 
                 android:layout_marginEnd="23dp"
 
+                android:contentDescription="TODO"
                 android:onClick="eventclick"
                 android:src="@drawable/calender_photo"
                 app:layout_constraintBottom_toBottomOf="@+id/eventcal"
@@ -59,8 +60,7 @@
                 app:layout_constraintStart_toStartOf="@+id/eventcal"
                 app:layout_constraintTop_toTopOf="@+id/eventcal"
                 app:layout_constraintVertical_bias="0.0"
-                tools:ignore="MissingConstraints"
-                android:contentDescription="TODO" />
+                tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/eventtext"
@@ -96,8 +96,8 @@
                 android:id="@+id/resphoto"
                 android:layout_width="148dp"
                 android:layout_height="97dp"
-                android:onClick="resourcesclick"
                 android:layout_marginTop="8dp"
+                android:onClick="resourcesclick"
 
                 android:src="@drawable/resource_photo"
                 app:layout_constraintEnd_toEndOf="@+id/resoucebg"
@@ -180,12 +180,12 @@
                 android:layout_width="129dp"
                 android:layout_height="94dp"
 
+                android:onClick="openGoogleForm"
                 android:src="@drawable/maintanence_photo"
                 app:layout_constraintBottom_toTopOf="@id/maintainencetext"
                 app:layout_constraintEnd_toEndOf="@+id/maintainencebg"
                 app:layout_constraintStart_toStartOf="@+id/maintainencebg"
                 app:layout_constraintTop_toTopOf="@id/maintainencebg"
-                android:onClick="openGoogleForm"
                 app:layout_constraintVertical_bias="0.63"
                 tools:ignore="MissingConstraints" />
 
@@ -223,14 +223,14 @@
                 android:layout_width="129dp"
                 android:layout_height="94dp"
 
+                android:contentDescription="TODO"
                 android:onClick="memepage"
                 android:src="@drawable/meme"
                 app:layout_constraintBottom_toBottomOf="@+id/memebg"
                 app:layout_constraintEnd_toEndOf="@+id/memebg"
                 app:layout_constraintStart_toStartOf="@+id/memebg"
                 app:layout_constraintTop_toTopOf="@+id/memebg"
-                tools:ignore="MissingConstraints"
-                android:contentDescription="TODO" />
+                tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/memetext"
@@ -348,12 +348,10 @@
         android:id="@+id/imageView2"
         android:layout_width="384dp"
         android:layout_height="242dp"
-        android:layout_marginBottom="580dp"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintBottom_toTopOf="@+id/midpage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
-         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/topbar" />
 
 
