@@ -128,32 +128,36 @@
         <Button
             android:layout_width="184dp"
             android:layout_height="141dp"
-            android:layout_marginTop="112dp"
+            android:layout_marginTop="56dp"
             android:background="@drawable/rnd_rect"
             android:backgroundTint="@color/lighttheme"
             android:text="CHECK ATTENDANCE"
 
             android:textColorLink="#FFFFFF"
             android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.07"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editProfileButton"
+            app:layout_constraintVertical_bias="0.033"
             tools:ignore="MissingConstraints" />
 
         <Button
             android:layout_width="184dp"
             android:layout_height="141dp"
-            android:layout_marginTop="112dp"
+            android:layout_marginTop="56dp"
             android:background="@drawable/rnd_rect"
             android:backgroundTint="@color/lighttheme"
             android:text="NOTES"
 
             android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.929"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editProfileButton"
+            app:layout_constraintVertical_bias="0.033"
             tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
