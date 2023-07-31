@@ -6,8 +6,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bgnd"
+    android:background="@drawable/bg1"
+
     tools:context=".MainActivity">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/midpage"
@@ -51,6 +53,7 @@
 
                 android:layout_marginEnd="23dp"
 
+                android:contentDescription="TODO"
                 android:onClick="eventclick"
                 android:src="@drawable/calender_photo"
                 app:layout_constraintBottom_toBottomOf="@+id/eventcal"
@@ -59,8 +62,7 @@
                 app:layout_constraintStart_toStartOf="@+id/eventcal"
                 app:layout_constraintTop_toTopOf="@+id/eventcal"
                 app:layout_constraintVertical_bias="0.0"
-                tools:ignore="MissingConstraints"
-                android:contentDescription="TODO" />
+                tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/eventtext"
@@ -96,8 +98,8 @@
                 android:id="@+id/resphoto"
                 android:layout_width="148dp"
                 android:layout_height="97dp"
-                android:onClick="resourcesclick"
                 android:layout_marginTop="8dp"
+                android:onClick="resourcesclick"
 
                 android:src="@drawable/resource_photo"
                 app:layout_constraintEnd_toEndOf="@+id/resoucebg"
@@ -160,6 +162,7 @@
                 app:layout_constraintVertical_bias="0.95"
                 tools:ignore="MissingConstraints" />
 
+
             <ImageView
                 android:id="@+id/maintainencebg"
                 android:layout_width="181dp"
@@ -170,22 +173,21 @@
                 app:layout_constraintHorizontal_bias="0.583"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/midhzguide"
-                app:layout_constraintVertical_bias="0.294"
+                app:layout_constraintVertical_bias="0.4"
                 app:srcCompat="@drawable/rnd_rect"
                 tools:ignore="MissingConstraints" />
-
 
             <ImageView
                 android:id="@+id/maintphoto"
                 android:layout_width="129dp"
                 android:layout_height="94dp"
 
+                android:onClick="openGoogleForm"
                 android:src="@drawable/maintanence_photo"
                 app:layout_constraintBottom_toTopOf="@id/maintainencetext"
                 app:layout_constraintEnd_toEndOf="@+id/maintainencebg"
                 app:layout_constraintStart_toStartOf="@+id/maintainencebg"
                 app:layout_constraintTop_toTopOf="@id/maintainencebg"
-                android:onClick="openGoogleForm"
                 app:layout_constraintVertical_bias="0.63"
                 tools:ignore="MissingConstraints" />
 
@@ -223,14 +225,14 @@
                 android:layout_width="129dp"
                 android:layout_height="94dp"
 
+                android:contentDescription="TODO"
                 android:onClick="memepage"
                 android:src="@drawable/meme"
                 app:layout_constraintBottom_toBottomOf="@+id/memebg"
                 app:layout_constraintEnd_toEndOf="@+id/memebg"
                 app:layout_constraintStart_toStartOf="@+id/memebg"
                 app:layout_constraintTop_toTopOf="@+id/memebg"
-                tools:ignore="MissingConstraints"
-                android:contentDescription="TODO" />
+                tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/memetext"
@@ -252,7 +254,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="166dp" />
+                app:layout_constraintGuide_begin="180dp" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline4"
@@ -266,14 +268,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="352dp" />
+                app:layout_constraintGuide_begin="360dp" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/bothzguide"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="539dp" />
+                app:layout_constraintGuide_end="15dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -346,8 +348,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="384dp"
-        android:layout_height="242dp"
+        android:layout_width="426dp"
+        android:layout_height="256dp"
         app:layout_constraintBottom_toTopOf="@+id/midpage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
